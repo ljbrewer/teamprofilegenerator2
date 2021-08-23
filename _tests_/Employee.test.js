@@ -1,11 +1,11 @@
-const employee = require('../index');
+const employeeClass = require('../lib/employeeClass');
+const inquirer = require("./inquirer");
 
-describe(employee, () =>{
+describe("Employee", () =>{
   it('should have a string for the name', ()=>{
-     if(typeof employee.name === 'string'){
-      expect(employee([name])).toBe(true);
-     } else {
-      expect(employee([name])).toBe(false);
-     }
-     })
-    })
+    const obj = new Employee();
+    console.log("Employee test file")
+    expect("name" in obj).toEqual(true);
+    expect(typeof obj.name === string).toEqual(true);
+   } )
+})
